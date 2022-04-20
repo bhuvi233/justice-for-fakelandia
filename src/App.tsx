@@ -5,14 +5,18 @@ import { Home } from './components/Home';
 import { Misdemeanours } from './components/misdemeanours';
 import { Confession } from './components/confession';
 import { NotFound } from './components/notFound';
+import { MainLayout } from './components/layout';
 
 const Router: React.FC = () => 
   <BrowserRouter>
     <Routes>
-      <Route path = '/' element = {<Home/>}/>
-      <Route path = '/misdemeanours' element = {<Misdemeanours/>} />
-      <Route path = '/confession' element = {<Confession/>} />
-      <Route path = '*' element = {<NotFound/>} />
+      <Route element={<MainLayout />}>
+        <Route index element = {<Home/>}/>
+        <Route path = 'misdemeanours' element = {<Misdemeanours/>} />
+        <Route path = 'confession' element = {<Confession/>} />
+        <Route path = '*' element = {<NotFound/>} />
+      </Route>
+
     </Routes>
   </BrowserRouter>
 

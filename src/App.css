@@ -37,6 +37,14 @@
   }
 }
 
+.main__container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content:space-between;
+}
+
+
 .nav__container {
   display: flex;
   justify-content: space-around;
@@ -57,11 +65,12 @@
 }
 
 .footer {
-	line-height: 2em;
-	margin-top: 0.5em;
-	padding: 1em 3em;
+	line-height: 1.5rem;
 }
 
-.footer__section {
-	min-width: 9.375em;
+.footer h6 {
+  margin: 0 auto;
+}
+.footer h4 {
+  margin: 0 auto;
 }

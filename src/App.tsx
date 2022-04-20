@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { Home } from './components/Home';
 import { Misdemeanours } from './components/misdemeanours';
 import { Confession } from './components/confession';
+import { NotFound } from './components/notFound';
 
 const Router: React.FC = () => 
   <BrowserRouter>
@@ -11,6 +12,7 @@ const Router: React.FC = () =>
       <Route path = '/' element = {<Home/>}/>
       <Route path = '/misdemeanours' element = {<Misdemeanours/>} />
       <Route path = '/confession' element = {<Confession/>} />
+      <Route path = '*' element = {<NotFound/>} />
     </Routes>
   </BrowserRouter>
 

@@ -77,8 +77,25 @@ nav a{
 
 .nav__link--active {
   color: rgb(179 64 64);
+}
+
+.misdemean__container {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 2fr 3fr 4fr;
+  gap: 15px 10px;
+  padding-top: 30px;
 
 }
+
+.misdemean__item {
+  place-self: center stretch;
+  padding: 1em;
+}
+
+.misdemean__item--citizenId {
+  grid-column: 2;
+}
+
 .footer {
 	line-height: 1.5rem;
 }
@@ -86,6 +103,7 @@ nav a{
 .footer h6 {
   margin: 0 auto;
 }
+
 .footer h4 {
   margin: 0 auto;
 }

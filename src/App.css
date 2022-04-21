@@ -81,19 +81,31 @@ nav a{
 
 .misdemean__container {
   display: grid;
-  grid-template-columns: 0.5fr 2fr 2fr 3fr 4fr;
-  gap: 15px 10px;
+  grid-template-columns: 0.5fr 2fr 2fr 3fr 4fr 0.5fr;
   padding-top: 30px;
 
 }
 
 .misdemean__item {
-  place-self: center stretch;
   padding: 1em;
+  display: inline-grid;
+  align-content: center;
+  justify-content: center;
+  border-right: 2px solid;
+}
+
+.misdemean__item:nth-child(4n) {
+  border-right: 0;
+}
+
+.item--title {
+  font-size: 1.25rem;
+  background: beige;
 }
 
 .misdemean__item--citizenId {
   grid-column: 2;
+    
 }
 
 .footer {

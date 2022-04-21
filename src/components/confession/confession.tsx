@@ -1,9 +1,9 @@
 import React, { FormEvent, useContext, useState } from "react";
-import { Misdemeanour, rand } from "../docs/generate_misdemeanours";
+import { Misdemeanour, rand } from "../../docs/generate_misdemeanours";
 import { ConfessionFormReasonInput } from "./confessionFormReasonInput";
 import { ConfessionFormSubjectInput } from "./confessionFormSubjectInput";
 import { ConfessionFormTextareaInput } from "./confessionFormTextareaInput";
-import { IMisdemeanour, MisdemeanourContext } from "./misdemeanourContext";
+import { IMisdemeanour, MisdemeanourContext } from "../misdemeanour/misdemeanourContext";
 
 export const Confession: React.FC = () => {
     const [subject, setSubject] = useState("");

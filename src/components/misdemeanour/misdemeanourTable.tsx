@@ -1,5 +1,5 @@
 import React from "react";
-import { Misdemeanour, MISDEMEANOURS } from "../docs/generate_misdemeanours";
+import { Misdemeanour, MISDEMEANOURS } from "../../docs/generate_misdemeanours";
 import { IMisdemeanour } from "./misdemeanourContext";
 
 interface MisdemeanourMapProps {

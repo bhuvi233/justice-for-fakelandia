@@ -1,5 +1,4 @@
 import React, { useContext, useEffect, useState } from "react";
-import { MISDEMEANOURS } from "../docs/generate_misdemeanours";
 import { IMisdemeanour, MisdemeanourContext } from "./misdemeanourContext";
 import { MisdemeanourFilter } from "./misdemeanourFilter";
 import { MisdemeanourTable } from "./misdemeanourTable";

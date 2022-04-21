@@ -1,6 +1,8 @@
-.App {
+.App, button {
   text-align: center;
-  background: #698683;
+  background: #74afa9;
+  font-size: 1.25rem;
+  font-family: monospace;
 }
 
 .App-logo {
@@ -101,7 +103,6 @@ nav a{
 }
 
 .item--title {
-  font-size: 1.25rem;
   background: #baba87;
 }
 
@@ -109,6 +110,21 @@ nav a{
   grid-column: 2;
     
 }
+
+.confessionform__container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 0 auto;
+  align-items: flex-end;
+}
+
+.confessionform__button {
+  width: 7rem;
+  height: 2rem;
+  align-self: center;
+}
+
 
 .title--misdemean {
   display: flex;

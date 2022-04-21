@@ -29,7 +29,7 @@ export default async function generateMisdemeanours(
 	return misdemeanours;
 }
 
-function rand(x: number): number {
+export function rand(x: number): number {
 	return Math.random() * x;
 }
 

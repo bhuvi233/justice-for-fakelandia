@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background: #698683;
 }
 
 .App-logo {
@@ -49,7 +50,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background: darkseagreen;
+  background: #95652a;
 }
 
 .nav__logo {
@@ -76,7 +77,7 @@ nav a{
 }
 
 .nav__link--active {
-  color: rgb(179 64 64);
+  color: wheat;
 }
 
 .misdemean__container {
@@ -92,6 +93,7 @@ nav a{
   align-content: center;
   justify-content: center;
   border-right: 2px solid;
+  font-size: 1.25rem;
 }
 
 .misdemean__item:nth-child(4n) {
@@ -100,12 +102,18 @@ nav a{
 
 .item--title {
   font-size: 1.25rem;
-  background: beige;
+  background: #baba87;
 }
 
 .misdemean__item--citizenId {
   grid-column: 2;
     
+}
+
+.title--misdemean {
+  display: flex;
+  text-align-last: center;
+  justify-content: space-around;
 }
 
 .footer {

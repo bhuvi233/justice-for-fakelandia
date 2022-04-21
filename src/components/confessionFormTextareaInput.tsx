@@ -1,10 +1,15 @@
 import React from "react";
 
-export const ConfessionFormTextareaInput: 
-    React.FC<{onChangeConfession:(e: React.ChangeEvent<HTMLTextAreaElement>) => void;}> = 
-        ({onChangeConfession}) =>   
+interface ConfessionFormTextareaProps {
+    confession: string;
+    onChangeConfession:(e: React.ChangeEvent<HTMLTextAreaElement>) => void;
+}
+
+export const ConfessionFormTextareaInput: React.FC<ConfessionFormTextareaProps> = 
+    ({confession, onChangeConfession}) =>   
     <textarea 
-        placeholder="Minimum 100 characters" 
+        value= {confession}
+        placeholder = "Minimum 100 characters"
         rows= {10} 
         cols ={80} 
         onChange={onChangeConfession}>

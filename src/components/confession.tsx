@@ -23,6 +23,7 @@ export const Confession: React.FC = () => {
                 date: new Date().toLocaleDateString(),
             });
         }
+        setSubject(""); setReason(""); setConfession("");
     }
 
     return (
@@ -33,7 +34,7 @@ export const Confession: React.FC = () => {
             <p>
                 However, if you're just having a hard day and need to vent then you're welcome to contact us here too. Up to you!
             </p>
-            <form className="confessionform__container" onSubmit={handleConfessionFormSubmit}>
+            <form className="confessionform__container" onSubmit={handleConfessionFormSubmit} >
                 <p>
                     <ConfessionFormSubjectInput subject = {subject} onChangeSubjectInput = {e => setSubject(e.target.value)} />
                 </p>
@@ -41,10 +42,10 @@ export const Confession: React.FC = () => {
                     <ConfessionFormReasonInput reason= {reason} onChangeReason = {e => setReason(e.target.value)}/>
                 </p>
                 <p>
-                    <ConfessionFormTextareaInput onChangeConfession={e => setConfession(e.target.value)}/>
+                    <ConfessionFormTextareaInput confession={confession} onChangeConfession={e => setConfession(e.target.value)}/>
                 </p>
                 <button 
-                    disabled = {!(subject && reason && confession && confession.length > 10)} 
+                    disabled = {!(subject && reason && confession && confession.length > 100)} 
                     className= "confessionform__button" 
                     type="submit" 
                     value="submit">

@@ -8,5 +8,5 @@ interface FormSubjectInputProps {
 export const ConfessionFormSubjectInput:React.FC<FormSubjectInputProps> = ({subject, onChangeSubjectInput}) => 
     <>
         <label htmlFor='subject'>Subject: </label>
-        <input id='subject' type='text' value={subject} onChange={onChangeSubjectInput} />
+        <input id='subject' type='text' value = {subject} onChange={onChangeSubjectInput} />
     </>

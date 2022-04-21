@@ -1,4 +1,4 @@
-import { IMisdemeanour } from "../components/misdemeanourContext";
+import { IMisdemeanour } from "../components/misdemeanour/misdemeanourContext";
 
 export const MISDEMEANOURS = [
 	'rudeness',

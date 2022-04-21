@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import { IMisdemeanour, MisdemeanourContext } from "./misdemeanourContext";
 import { MisdemeanourFilter } from "./misdemeanourFilter";
-import { MisdemeanourTable } from "./misdemeanourTable";
+import { MisdemeanourTable } from './misdemeanourTable';
 
 export const Misdemeanours: React.FC = () => {
     const [filtervalue, setFilterValue] = useState("all");

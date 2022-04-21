@@ -2,12 +2,12 @@ import React, { useEffect, useState } from 'react';
 import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { Home } from './components/Home';
-import { Misdemeanours } from './components/misdemeanours';
-import { Confession } from './components/confession';
+import { Misdemeanours } from './components/misdemeanour/misdemeanours';
+import { Confession } from './components/confession/confession';
 import { NotFound } from './components/notFound';
 import { MainLayout } from './components/layout';
 import generateMisdemeanours, { Misdemeanour } from './docs/generate_misdemeanours';
-import { IMisdemeanour, MisdemeanourContext } from './components/misdemeanourContext';
+import { IMisdemeanour, MisdemeanourContext } from './components/misdemeanour/misdemeanourContext';
 
 const Router: React.FC = () => 
   <BrowserRouter>

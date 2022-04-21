@@ -1,3 +1,5 @@
+import React from 'react';
+
 interface ReasonInputProps{
     reason : string;
     onChangeReason : (e: React.ChangeEvent<HTMLSelectElement>) => void;
